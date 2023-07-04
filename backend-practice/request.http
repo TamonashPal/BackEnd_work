@@ -1,0 +1,49 @@
+get http://localhost:2500/user-api/users-findAll
+
+
+###
+get http://localhost:2500/user-api/users-findOne/Tamonash
+
+
+###
+post http://localhost:2500/user-api/users
+Content-Type: application/json
+
+{   
+    "username":"Pratiti",
+    "password":"pra1234",
+    "email":"pra@gmail.com",
+    "city":"Kolkata"
+    
+}
+
+###
+post http://localhost:2500/user-api/user-login
+Content-Type: application/json
+
+{
+    "username":"Tamonash",
+    "password":"tam"
+}
+
+###
+put http://localhost:2500/user-api/users/Pratiti
+Content-Type: application/json
+
+{
+    "city":"Pune"
+}
+
+
+###
+delete http://localhost:2500/user-api/user-delete/Aritra
+
+###
+delete http://localhost:2500/user-api/user-restore/Aritra
+
+
+###
+get http://localhost:2500/product-api/products
+
+
+

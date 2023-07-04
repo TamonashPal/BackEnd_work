@@ -1,0 +1,14 @@
+get http://localhost:2300/user-api/users
+
+###
+get http://localhost:2300/user-api/user/test1
+
+###
+post http://localhost:2300/user-api/user
+Content-Type: application/json
+
+{   
+    "username":"test2",
+    "password":"test2",
+    "email":"test2@gmail.com"
+}
